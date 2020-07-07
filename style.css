@@ -1,0 +1,65 @@
+[data-title] {
+  font-size: 20px;
+}
+.footer {
+  text-align: center;
+}
+#line {
+  color: rgb(226, 9, 9);
+}
+#img {
+  height: auto;
+}
+li {
+  color: rgb(49, 162, 207);
+  list-style-type: none;
+  margin-left: 2px;
+}
+#cont {
+  position: relative;
+}
+#bottom-left {
+  position: absolute;
+  bottom: 10%;
+  left: 12%;
+  color: aliceblue;
+}
+#bottom-left-1 {
+  position: absolute;
+  bottom: 5%;
+  left: 3%;
+}
+#hh1 {
+  color: rgb(49, 162, 207);
+}
+[data-offered-fall='yes'] {
+  list-style-image: url('tealcheck.png');
+}
+.full-text {
+  display: none;
+}
+.text::after {
+  content: '';
+}
+@media (min-width: 700px) {
+  .short-text {
+    display: none;
+  }
+  .full-text {
+    display: inline-block;
+    bottom: 10%;
+    left: 50%;
+    font-size: 4em;
+  }
+  .text::after {
+    content: attr(data-title);
+    color: black;
+  }
+}
+ul {
+  height: 500px;
+  display: flex;
+
+  flex-direction: column;
+  flex-wrap: wrap;
+}
